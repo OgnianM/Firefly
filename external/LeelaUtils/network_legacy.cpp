@@ -20,7 +20,7 @@
 #include "network_legacy.h"
 #include "weights_adapter.h"
 
-namespace lczero_modified {
+namespace lczero {
     namespace {
         static constexpr float kEpsilon = 1e-5f;
     }  // namespace

@@ -25,7 +25,7 @@
 
 #include "net.pb.h"
 
-namespace lczero_modified {
+namespace lczero {
 
     class LayerAdapter {
     public:

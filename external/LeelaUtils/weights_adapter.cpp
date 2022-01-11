@@ -22,7 +22,7 @@
 
 #include "weights_adapter.h"
 
-namespace lczero_modified {
+namespace lczero {
     float LayerAdapter::Iterator::ExtractValue(const uint16_t* ptr,
                                                const LayerAdapter* adapter) {
         return *ptr / static_cast<float>(0xffff) * adapter->range_ + adapter->min_;

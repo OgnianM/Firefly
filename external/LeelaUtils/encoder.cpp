@@ -31,7 +31,7 @@
 
 typedef uint64_t BitBoard;
 
-namespace lczero_modified {
+namespace lczero {
 
     namespace {
 

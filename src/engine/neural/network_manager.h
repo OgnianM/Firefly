@@ -310,8 +310,8 @@ struct network_manager
             reverse(history.begin(), history.end());
 
             int transform;
-            auto planes = lczero_modified::EncodePositionForNN(backends[0]->input_format, history, 8,
-                                                               lczero_modified::FillEmptyHistory::NO, &transform);
+            auto planes = lczero::EncodePositionForNN(backends[0]->input_format, history, 8,
+                                                      lczero::FillEmptyHistory::NO, &transform);
 
 
             for (int i = 0; i < NETWORK_INPUT_PLANES; i++) {
@@ -529,8 +529,8 @@ private:
                 reverse(history.begin(), history.end());
 
                 int transform;
-                auto planes = lczero_modified::EncodePositionForNN(backends[0]->input_format, history, 8,
-                                                                   lczero_modified::FillEmptyHistory::NO, &transform);
+                auto planes = lczero::EncodePositionForNN(backends[0]->input_format, history, 8,
+                                                                   lczero::FillEmptyHistory::NO, &transform);
 
 
                 for (int i = 0; i < NETWORK_INPUT_PLANES; i++) {

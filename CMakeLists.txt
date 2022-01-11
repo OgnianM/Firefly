@@ -3,6 +3,9 @@ project(Firefly)
 
 set(CMAKE_CXX_STANDARD 20)
 
+
+execute_process(COMMAND protoc --cpp_out=./ net.proto WORKING_DIRECTORY ../external/LeelaUtils)
+
 file(GLOB SENJO_SOURCES  "external/SenjoUCIAdapter/senjo/*.cpp" "external/SenjoUCIAdapter/senjo/*.h")
 #file(GLOB FATHOM_SOURCES "external/Fathom/src/*.c" "external/Fathom/src/*.h")
 file(GLOB LC0_UTILS

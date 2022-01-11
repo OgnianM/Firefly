@@ -7,3 +7,5 @@ tools
 weights/Leela
 .idea
 build
+external/LeelaUtils/net.pb.cc
+external/LeelaUtils/net.pb.h

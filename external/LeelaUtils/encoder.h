@@ -67,7 +67,7 @@ struct InputPlane {
 };
 using InputPlanes = std::vector<InputPlane>;
 
-namespace lczero_modified {
+namespace lczero {
 
     constexpr int kMoveHistory = 8;
     constexpr int kPlanesPerBoard = 13;
@@ -93,4 +93,4 @@ namespace lczero_modified {
 
 }  // namespace lczero
 
-namespace lczero = lczero_modified;
+namespace lczero = lczero;

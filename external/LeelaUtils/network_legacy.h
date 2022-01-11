@@ -19,7 +19,7 @@
 
 #include "net.pb.h"
 
-namespace lczero_modified {
+namespace lczero {
 
     struct LegacyWeights {
         explicit LegacyWeights(const pblczero::Weights& weights);
