@@ -1,6 +1,7 @@
-[submodule "external/Fathom"]
-	path = external/Fathom
-	url = https://github.com/jdart1/Fathom
+#[submodule "external/Fathom"]
+#	path = external/Fathom
+#	url = https://github.com/jdart1/Fathom
+
 [submodule "external/cxxopts"]
 	path = external/cxxopts
 	url = https://github.com/jarro2783/cxxopts

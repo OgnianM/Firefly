@@ -1674,6 +1674,7 @@ void chess::board::flip_board()
 };
 
 
+/*
 chess::move board::tb_probe_dtz() const
 {
     // TODO:
@@ -1692,7 +1693,7 @@ chess::move board::tb_probe_dtz() const
 
     ::tb_probe_root_dtz(white, black, pieces.kings, pieces.queens, pieces.rooks, pieces.bishops, pieces.knights,
                         pieces.pawns, halfmove_clock, castling_rights, )
-    */
+    * /
 }
 
 
@@ -1745,6 +1746,7 @@ game_state board::tb_probe_wdl(disentangled_pieces const& pieces, uint64_t const
             throw std::logic_error("Tablebase lookup returned an unrecognized value.");
     }
 }
+*/
 
 uint64_t chess::board::hash() const
 {

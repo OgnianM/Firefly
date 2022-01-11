@@ -220,12 +220,7 @@ void mcts::node::update_value(float value)
 
         node = node->parent;
     }
-    /*
-    if (parent)
-    {
-        if (parent != current_root)
-            parent->update_value(-value);
-    }*/
+    */
 
 }
 

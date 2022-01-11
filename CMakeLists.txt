@@ -4,7 +4,7 @@ project(Firefly)
 set(CMAKE_CXX_STANDARD 20)
 
 file(GLOB SENJO_SOURCES  "external/SenjoUCIAdapter/senjo/*.cpp" "external/SenjoUCIAdapter/senjo/*.h")
-file(GLOB FATHOM_SOURCES "external/Fathom/src/*.cpp" "external/Fathom/src/*.h")
+#file(GLOB FATHOM_SOURCES "external/Fathom/src/*.c" "external/Fathom/src/*.h")
 file(GLOB LC0_UTILS
         external/LeelaUtils/weights_adapter.cpp external/LeelaUtils/network_legacy.cpp
         external/LeelaUtils/network_legacy.h
@@ -84,6 +84,6 @@ endif ()
 
 find_package(Torch REQUIRED)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS} -Wcomment")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS} -Wno-comment")
 
 target_link_libraries(Firefly ${TORCH_LIBRARIES} ${OPTIONAL_LIBS} protobuf)

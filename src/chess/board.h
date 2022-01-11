@@ -24,7 +24,7 @@
 #include <vector>
 #include <map>
 #include <cassert>
-#include <external/Fathom/src/tbprobe.h>
+//#include <external/Fathom/src/tbprobe.h>
 #include <config.h>
 #include <testing/timer.h>
 #include <external/xxHash/xxh3.h>
@@ -228,11 +228,13 @@ extern const int tb_maxcount ;
         //endregion
 
         //region Evaluation
+        /*
         float nnue_eval() const;
         game_state tb_probe_wdl(disentangled_pieces const& pieces, uint64_t const& enemy_pieces) const;
         game_state tb_probe_wdl() const;
         chess::move tb_probe_dtz() const;
-        //endregion
+        */
+         //endregion
 
 
         //region Entangled pieces interface

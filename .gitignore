@@ -5,3 +5,5 @@ datasets
 src/trash
 tools
 weights/Leela
+.idea
+build
